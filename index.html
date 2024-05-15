@@ -37,7 +37,7 @@
         <span id="days">Try it free 7 days</span> then $20/mo. thereafter
       </p>
       <div id="card-2">
-        <div class="input-area">
+        <div id="input-area-fn" class="input-area">
           <input
             type="text"
             name="first-name"
@@ -46,11 +46,16 @@
             autocomplete="name"
             placeholder="First Name"
           />
-          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
-          <p class="error-msg">First Name cannot be empty</p>
+          <img
+            src="./images/icon-error.svg"
+            alt="Error icon"
+            id="error-fn"
+            class="error"
+          />
+          <p id="error-msg-fn" class="error-msg">First Name cannot be empty</p>
         </div>
 
-        <div class="input-area">
+        <div id="input-area-ln" class="input-area">
           <input
             type="text"
             name="last-name"
@@ -59,11 +64,16 @@
             autocomplete="family-name"
             placeholder="Last Name"
           />
-          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
-          <p class="error-msg">Last Name cannot be empty</p>
+          <img
+            src="./images/icon-error.svg"
+            alt="Error icon"
+            id="error-ln"
+            class="error"
+          />
+          <p id="error-msg-ln" class="error-msg">Last Name cannot be empty</p>
         </div>
 
-        <div class="input-area">
+        <div id="input-area-email" class="input-area">
           <input
             type="email"
             name="email"
@@ -72,11 +82,18 @@
             autocomplete="email"
             placeholder="Email Address"
           />
-          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
-          <p class="error-msg">Looks like this is not an email</p>
+          <img
+            src="./images/icon-error.svg"
+            alt="Error icon"
+            id="error-email"
+            class="error"
+          />
+          <p id="error-msg-email" class="error-msg">
+            Looks like this is not an email
+          </p>
         </div>
 
-        <div class="input-area">
+        <div id="input-area-pwd" class="input-area">
           <input
             type="password"
             name="password"
@@ -85,8 +102,13 @@
             autocomplete="off"
             placeholder="Password"
           />
-          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
-          <p class="error-msg">Password cannot be empty</p>
+          <img
+            src="./images/icon-error.svg"
+            alt="Error icon"
+            id="error-pwd"
+            class="error"
+          />
+          <p id="error-msg-pwd" class="error-msg">Password cannot be empty</p>
         </div>
 
         <button type="button" id="btn">Claim your free trial</button>
@@ -97,6 +119,7 @@
         </p>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -54,7 +54,6 @@ body {
 }
 
 .input-area {
-  /* height: 100px; */
   height: 75px;
 }
 
@@ -64,6 +63,7 @@ body {
   height: 51px;
   border-radius: 7px;
   border-style: solid;
+  border-color: hsl(246, 25%, 77%);
 
   color: hsl(249, 10%, 26%);
   font-weight: 600;
@@ -73,14 +73,19 @@ body {
   font-weight: 600;
 }
 
+.warn-input {
+  border-color: hsl(0, 100%, 74%);
+}
+
 .error {
+  visibility: hidden;
   position: relative;
   top: -40px;
   right: calc(-100% + 50px);
 }
 
 .error-msg {
-  margin: 10px 0px 0px 0px;
+  margin: 0px;
   position: relative;
   top: -30.5px;
 
@@ -91,10 +96,32 @@ body {
   color: hsl(0, 100%, 74%);
 }
 
+.show-warning {
+  visibility: visible !important;
+}
+
+.show-warning-msg {
+  height: 100px !important;
+}
+
 #btn {
+  padding-top: 3px;
   width: 100%;
-  height: 55px;
+  height: 52px;
   border-radius: 7px;
+  border: 0px;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 3px hsl(154, 59%, 31%);
+
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: hsla(154, 59%, 51%, 0.75);
+  box-shadow: 0px 3px hsla(154, 59%, 31%, 0.75);
 }
 
 #user-consent {
