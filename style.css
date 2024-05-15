@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  padding: 0px 165px;
+  height: 100vh;
+
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./images/bg-intro-desktop.png");
+
+  display: grid;
+  gap: 75px;
+  grid-template-columns: 1fr 48.65%;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+
+#header {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+#desc {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+#card-1 {
+  margin: 0px 0px 25px 0px;
+  padding: 20px;
+
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px hsla(249, 10%, 26%, 0.25);
+}
+
+#days {
+  font-weight: 600;
+}
+
+#card-2 {
+  padding: 40px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 10px hsla(249, 10%, 26%, 0.25);
+}
+
+.input-area {
+  /* height: 100px; */
+  height: 75px;
+}
+
+.textbox {
+  padding: 0px 30px;
+  width: calc(100% - 64px);
+  height: 51px;
+  border-radius: 7px;
+  border-style: solid;
+
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+
+.textbox::placeholder {
+  font-weight: 600;
+}
+
+.error {
+  position: relative;
+  top: -40px;
+  right: calc(-100% + 50px);
+}
+
+.error-msg {
+  margin: 10px 0px 0px 0px;
+  position: relative;
+  top: -30.5px;
+
+  font-size: 11px;
+  font-weight: 500;
+  text-align: right;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+}
+
+#btn {
+  width: 100%;
+  height: 55px;
+  border-radius: 7px;
+}
+
+#user-consent {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+}
+
+#terms-services {
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
+}

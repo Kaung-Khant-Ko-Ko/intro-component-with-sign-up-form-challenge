@@ -12,76 +12,91 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
     <div>
-      <h1>Learn to code by watching others</h1>
-      <p>
+      <h1 id="header">Learn to code by watching others</h1>
+      <p id="desc">
         See how experienced developers solve problems in real-time. Watching
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </p>
     </div>
     <div>
-      <p>Try it free 7 days then $20/mo. thereafter</p>
-      <div>
-        <div>
-          <div>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              autocomplete="name"
-              placeholder="First Name"
-            />
-            <img src="./images/icon-error.svg" alt="Error icon" />
-            <p>First Name cannot be empty</p>
-          </div>
-
-          <div>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              autocomplete="family-name"
-              placeholder="Last Name"
-            />
-            <img src="./images/icon-error.svg" alt="Error icon" />
-            <p>Last Name cannot be empty</p>
-          </div>
-
-          <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autocomplete="email"
-              placeholder="Email Address"
-            />
-            <img src="./images/icon-error.svg" alt="Error icon" />
-            <p>Looks like this is not an email</p>
-          </div>
-
-          <div>
-            <input
-              type="password"
-              name="password"
-              id="pwd"
-              autocomplete="off"
-              placeholder="Password"
-            />
-            <img src="./images/icon-error.svg" alt="Error icon" />
-            <p>Password cannot be empty</p>
-          </div>
-
-          <button type="button">Claim your free trial</button>
-
-          <p>
-            By clicking the button, you are agreeing to our Terms and Services
-          </p>
+      <p id="card-1">
+        <span id="days">Try it free 7 days</span> then $20/mo. thereafter
+      </p>
+      <div id="card-2">
+        <div class="input-area">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            class="textbox"
+            autocomplete="name"
+            placeholder="First Name"
+          />
+          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
+          <p class="error-msg">First Name cannot be empty</p>
         </div>
+
+        <div class="input-area">
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            class="textbox"
+            autocomplete="family-name"
+            placeholder="Last Name"
+          />
+          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
+          <p class="error-msg">Last Name cannot be empty</p>
+        </div>
+
+        <div class="input-area">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="textbox"
+            autocomplete="email"
+            placeholder="Email Address"
+          />
+          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
+          <p class="error-msg">Looks like this is not an email</p>
+        </div>
+
+        <div class="input-area">
+          <input
+            type="password"
+            name="password"
+            id="pwd"
+            class="textbox"
+            autocomplete="off"
+            placeholder="Password"
+          />
+          <img src="./images/icon-error.svg" alt="Error icon" class="error" />
+          <p class="error-msg">Password cannot be empty</p>
+        </div>
+
+        <button type="button" id="btn">Claim your free trial</button>
+
+        <p id="user-consent">
+          By clicking the button, you are agreeing to our
+          <span id="terms-services">Terms and Services</span>
+        </p>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
